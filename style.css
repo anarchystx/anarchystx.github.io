@@ -17,7 +17,7 @@ body {
     background-color: var(--bg-color);
     color: var(--text-main);
     font-family: 'JetBrains Mono', monospace;
-    font-weight: 600;
+    font-weight: 900;
     display: flex;
     justify-content: center;
     align-items: center;
