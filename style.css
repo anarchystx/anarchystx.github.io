@@ -86,8 +86,8 @@ body {
 .menu-item {
     display: flex;
     align-items: center;
-    justify-content: center; 
-    padding: 15px 20px;
+    justify-content: center;
+    padding: 15px 20px;  
     background: transparent;
     border: 1px solid var(--border-color);
     color: var(--text-main);
@@ -98,49 +98,38 @@ body {
     overflow: hidden;
     border-radius: 12px;
     
-}
-
-.content-group {
-    display: flex;
-    align-items: center;
-    gap: 100px; 
-    z-index: 1;
+    padding-left: 60px; 
 }
 
 .icon {
+    position: absolute;
+    left: 20px;     
+    top: 50%;
+    transform: translateY(-50%); 
     font-size: 1.3rem;
     opacity: 0.9;
-    transition: transform 0.3s ease;
+    z-index: 2;
+    transition: all 0.3s ease;
 }
 
 .text {
     letter-spacing: 0.5px;
-    font-weight: 600; 
-    white-space: nowrap; 
+    font-weight: 600;
+    white-space: nowrap;
+    width: 100%;   
+    text-align: center; 
+    margin-right: 20px;
 }
 
-.arrow {
-    position: absolute;
-    right: 20px; =
-    top: 50%;
-    transform: translateY(-50%);
-    opacity: 0.4;
-    font-size: 1rem;
-    transition: all 0.3s ease;
-    z-index: 1;
-}
 
-.menu-item:hover .content-group {
-    transform: translateX(-5px);
+
+.menu-item:hover .icon {
+    transform: translateY(-50%) scale(1.1);
 }
 
 .menu-item:hover .arrow {
     opacity: 1;
     transform: translateY(-50%) translateX(5px);
-}
-
-.menu-item:hover .icon {
-    transform: scale(1.1); 
 }
 
 .disabled {
