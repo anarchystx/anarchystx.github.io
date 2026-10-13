@@ -31,7 +31,6 @@ body {
     animation: fadeIn 0.8s ease-out;
 }
 
-/* Хедер */
 .header-block {
     text-align: center;
     margin-bottom: 40px;
@@ -46,10 +45,10 @@ body {
 .avatar-img {
     width: 100px;
     height: 100px;
-    border-radius: 4px; /* Не круглый, а квадратный со скруглением - стиль Kontor */
+    border-radius: 4px; 
     object-fit: cover;
     border: 1px solid var(--border-color);
-    filter: grayscale(100%) contrast(120%); /* ЧБ эффект */
+    filter: grayscale(100%) contrast(120%);
     transition: all 0.3s ease;
 }
 
@@ -77,7 +76,6 @@ body {
     margin-top: 5px;
 }
 
-/* Меню */
 .links-menu {
     display: flex;
     flex-direction: column;
@@ -94,9 +92,10 @@ body {
     color: var(--text-main);
     text-decoration: none;
     font-size: 0.9rem;
-    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: all 0.3s ease;
     position: relative;
     overflow: hidden;
+    border-radius: 12px;
 }
 
 .menu-item::before {
@@ -149,7 +148,6 @@ body {
     cursor: not-allowed;
 }
 
-/* Футер */
 .footer-info {
     margin-top: 40px;
     display: flex;
@@ -160,7 +158,6 @@ body {
     padding-top: 10px;
 }
 
-/* Анимации */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
