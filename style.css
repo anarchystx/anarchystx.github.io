@@ -53,10 +53,15 @@ body {
     transition: all 0.3s ease;
 }
 
-.avatar-img:hover {
-    filter: grayscale(0%) contrast(100%); /* При наведении цвет возвращается */
-    border-color: var(--accent);
-    transform: scale(1.05);
+.avatar-img {
+    width: 110px;   
+    height: 110px;   
+    border-radius: 16px;
+    object-fit: cover;
+    border: none;       
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5); 
+    filter: grayscale(80%) contrast(110%);
+    transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .status-dot {
@@ -65,7 +70,7 @@ body {
     right: 5px;
     width: 12px;
     height: 12px;
-    background-color: #00ff00; /* Зеленый статус онлайн */
+    background-color: #00ff00; 
     border: 2px solid var(--bg-color);
     border-radius: 50%;
     animation: pulse 2s infinite;
