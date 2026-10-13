@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой Bio</title>
-    <!-- Подключаем стили -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Иконки FontAwesome для Telegram и TikTok -->
+    <title>AnarchyStx // Bio</title>
+    <!-- Шрифт JetBrains Mono (похож на тот, что в Kontor/Kultura) -->
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Иконки -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <!-- Твой Аватар (замени src на путь к своей картинке или оставь placeholder) -->
-        <img src="https://via.placeholder.com/150" alt="Аватар" class="avatar">
-        
-        <!-- Твоё Имя / Никнейм -->
-        <h1 class="name">xo night</h1>
-        
-        <!-- Короткое описание -->
-        <p class="bio">/home/harlequinave</p>
+    <div class="wrapper">
+        <!-- Блок Аватара -->
+        <div class="header-block">
+            <div class="avatar-container">
+                <!-- ВАЖНО: Замени src="avatar.jpg" на имя своего файла, который загрузишь позже -->
+                <!-- Или поставь сюда любую другую ссылку на фото -->
+                <img src="avatar.jpg" alt="Avatar" class="avatar-img">
+                <div class="status-dot"></div>
+            </div>
+            
+            <h1 class="username">/home/harlequinave</h1>
+            <p class="tagline">// digital entity & developer</p>
+        </div>
 
-        <!-- Блок с кнопками -->
-        <div class="links">
-            <!-- Ссылка на Telegram -->
-            <a href="https://t.me/enterinlife" target="_blank" class="btn telegram-btn">
-                <i class="fab fa-telegram"></i> DM Tg
+        <!-- Меню ссылок -->
+        <nav class="links-menu">
+            <a href="https://t.me/anarchystx" target="_blank" class="menu-item">
+                <span class="icon"><i class="fab fa-telegram-plane"></i></span>
+                <span class="text">DM TG</span>
+                <span class="arrow">→</span>
             </a>
 
-            <!-- Ссылка на TikTok -->
-            <a href="https://www.tiktok.com/@coldbrilliants1" target="_blank" class="btn tiktok-btn">
-                <i class="fab fa-tiktok"></i> TikTok
+            <a href="https://www.tiktok.com/@anarchystx" target="_blank" class="menu-item">
+                <span class="icon"><i class="fab fa-tiktok"></i></span>
+                <span class="text">TIKTOK</span>
+                <span class="arrow">→</span>
             </a>
-         </div>
+        </nav>
+
+        <footer class="footer-info">
+            <span>© 2026 anarchystx</span>
+            <span>v1.0.0_stable</span>
+        </footer>
     </div>
 
 </body>
