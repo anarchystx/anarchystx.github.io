@@ -161,6 +161,27 @@ body {
     padding-top: 15px;
 }
 
+.discord-widget-container {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.lanyard-frame {
+    width: 100%;
+    max-width: 340px;
+    height: auto;  
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.discord-widget-container:hover .lanyard-frame {
+    transform: scale(1.02);
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(20px); }
     to { opacity: 1; transform: translateY(0); }
