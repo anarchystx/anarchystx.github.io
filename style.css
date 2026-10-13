@@ -103,7 +103,7 @@ body {
 .content-group {
     display: flex;
     align-items: center;
-    gap: 20px; 
+    gap: 26px; 
     z-index: 1;
 }
 
