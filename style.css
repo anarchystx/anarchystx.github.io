@@ -86,7 +86,8 @@ body {
 .menu-item {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: center;
+    gap: 15px;
     padding: 15px 20px;
     background: transparent;
     border: 1px solid var(--border-color);
